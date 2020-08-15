@@ -1,0 +1,31 @@
+<form
+  [formGroup]="newUserForm"
+  (ngSubmit)="onSubmit()"
+  class="field is-grouped"
+>
+  <p class="control is-expanded">
+    <input
+      type="text"
+      class="input is-small"
+      formControlName="firstName"
+      placeholder="Last name"
+    />
+  </p>
+  <p class="control is-expanded">
+    <input
+      type="text"
+      class="input is-small"
+      formControlName="lastName"
+      placeholder="First name"
+    />
+  </p>
+  <p class="control">
+    <button
+      type="submit"
+      class="button is-small is-info"
+      [disabled]="newUserForm.invalid"
+    >
+      Add user
+    </button>
+  </p>
+</form>

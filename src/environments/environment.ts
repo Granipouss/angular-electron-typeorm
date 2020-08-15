@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false,
+  dbPathFactory: (getAppPath: (key?: string) => string) =>
+    [getAppPath(), 'dist/assets/data', 'database.db'].join('/'),
 };
 
 /*
