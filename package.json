@@ -1,5 +1,6 @@
 {
   "name": "angular-electron",
+  "description": "Template repository for Angular, Electron and TypeORM desktop app with a local database",
   "version": "0.1.0",
   "main": "main.js",
   "scripts": {
